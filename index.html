@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aster New</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            @media screen and (max-width: 800px) {
+                .navlist a:nth-child(n+4) {
+                    display: none;
+                }
+                
+                .info-hidden p {
+                    display: none;
+                }
+                .hidden-img img {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg-stone-100 grid grid-cols-5 lg:gap-10">
+            <div class="col-span-1 w-full">
+                <div class="container justify-between">
+                    <div class="flex items-center lg:py-5 lg:px-8 sm:mb-2">
+                        <a href="#"><img src="./images/logo.png" alt="logo"></a>
+                        <h1 class="lg:text-lg text-blue-600 ml-4">Aster News</h1>
+                    </div>
+                    <div class="inline-flex items-center lg:gap-3 w-11/12
+                        lg:px-4 p-1 bg-blue-100
+                        rounded-r-full lg:py-4 sm:mb-2 border-t">
+                        <div class="lg:my-auto">
+                            <div class="lg:py-1 lg:px-1 rounded-full
+                                bg-blue-600"></div>
+                        </div>
+                        <a href="#"><img src="./images/icon/home.svg"
+                                alt=""></a>
+                        <p class="text-blue-400 ml-2 sm:text-sm">Top Stories</p>
+                    </div>
+                    <div class="flex items-center p-1 lg:py-5 lg:px-8 sm:mb-2">
+                        <a href="#"><img src="./images/icon/globe.svg"
+                                alt=""></a>
+                        <p class="lg:ml-5 sm:ml-2 sm:text-sm">Around the World</p>
+                    </div>
+                    <div class="flex items-center lg:py-5 lg:px-8 p-1 sm:mb-2">
+                        <a href="#"><img src="./images/icon/briefcase.svg"
+                                alt=""></a>
+                        <p class=" lg:ml-5 sm:ml-2 sm:text-sm">Business</p>
+                    </div>
+                    <div class="flex items-center lg:py-5 lg:px-8 p-1 sm:mb-2">
+                        <a href="#"><img src="./images/icon/activity.svg"
+                                alt=""></a>
+                        <p class="lg:ml-5 sm:ml-2 sm:text-sm">Health</p>
+                    </div>
+                    <div class="flex w-11/12 border-t border-b lg:py-9 lg:px-6
+                        py-2 px-1 sm:mb-2">
+                        <a href="#"><img src="./images/icon/shield.svg"
+                                alt=""></a>
+                        <p class="lg:ml-5 sm:ml-2 sm:text-sm">Covid 19</p>
+                    </div>
+                    <div class="flex lg:py-5 lg:px-8 p-1 sm:mb-2">
+                        <a href="#"><img src="./images/icon/play-circle.svg"
+                                alt=""></a>
+                        <p class="lg:ml-5 sm:ml-2 sm:text-sm">Entertainment</p>
+                    </div>
+                    <div class="flex lg:py-5 lg:px-8 sm:p-1 sm:mb-2">
+                        <a href="#"><img src="./images/icon/award.svg"
+                                alt=""></a>
+                        <p class="lg:ml-5 sm:ml-2 sm:text-sm">Sports</p>
+                    </div>
+                    <div class="flex lg:py-5 lg:px-8 sm:p-1 sm:mb-2">
+                        <a href="#"><img
+                                src="./images/icon/message-circle.svg"
+                                alt=""></a>
+                        <p class="lg:ml-5 sm:ml-2 sm:text-sm">Discussion</p>
+                    </div>
+                    <div class="flex lg:py-5 lg:px-8 sm:p-1 sm:mb-2">
+                        <a href="#"><img src="./images/icon/bell.svg"
+                                alt=""></a>
+                        <p class="lg:ml-5 sm:ml-2 sm:text-sm">Notification</p>
+                    </div>
+                    <div class="flex lg:py-5 lg:px-8 lg:mb-8 sm:p-1 sm:mb-2">
+                        <a href="#"><img src="./images/icon/settings.svg"
+                                alt=""></a>
+                        <p class="lg:ml-5 sm:ml-2 sm:text-sm">News Feed Settings</p>
+                    </div>
+
+                    <div class="bg-blue-400 mx-auto lg:my-3 lg:w-11/12
+                        items-center
+                        rounded">
+                        <div class="mx-auto lg:py-5 lg:px-9 lg:w-4/5 sm:p-1">
+                            <div class="flex mb-5 justify-between ">
+                                <img src="./images/icon/gift.svg" alt="">
+                                <p class="ml-4 text-white text-sm">Subscribe to
+                                    Premium</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex">
+                                    <p class="text-white text-3xl">$8</p><p
+                                        class="text-white text-sm pt-3 sm:mr-1">/m</p>
+                                </div>
+
+                                <a href="#">
+                                    <p class="text-white rounded text-base
+                                        lg:pt-2 sm:p-1
+                                        lg:pl-7
+                                        lg:pb-2 lg:pr-7 bg-blue-600 sm:text-sm">Upgrade</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-3 lg:py-6 sm:p-2">
+                <div class="flex items-center w-full justify-between lg:mb-8">
+                    <div class="flex w-3/5">
+                        <input type="search" name="q" class="lg:h-14 w-full py-2
+                            text-sm text-white bg-blue-100 rounded-md pl-10
+                            focus:outline-none focus:bg-white
+                            focus:text-gray-900" placeholder="Search for news.."
+                            autocomplete="off">
+                        <button type="submit" class="p-1 focus:outline-none
+                            focus:shadow-outline -translate-x-10">
+                            <img src="./images/icon/search.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="flex justify-between w-2/5 border-2 lg:px-6
+                        lg:py-4 rounded">
+                        <button type="submit flex">
+                            <span>Latest news on <span class="text-blue-400">
+                                    Covid-19</span></span>
+                        </button>
+                        <img src="./images/icon/arrow-right.svg" alt="">
+                    </div>
+                </div>
+                <div class="lg:mb-6 sm:mb-2">
+                    <div class="w-full lg:mb-6 sm:mb-2">
+                        <p class="text-bold lg:text-xl">Top Stories for you</p>
+                    </div>
+                    <div class="flex text-center">
+                        <div class="w-3/4">
+                            <div class="navlist inline-flex w-full lg:gap-4
+                                sm:gap-4">
+                                <a class="bg-blue-400 py-2 rounded-3xl px-5
+                                    col-span-1 text-center" href="#"><span>All</span></a>
+                                <a class="bg-white py-2 px-4 rounded-3xl
+                                    col-span-1 text-center" href="#"><span>Android</span></a>
+                                <a class="bg-white py-2 px-4 rounded-3xl
+                                    col-span-1 text-center" href="#"><span>Cricket</span></a>
+                                <a class="bg-white py-2 px-4 rounded-3xl
+                                    col-span-1 text-center" href="#"><span>iPhone</span></a>
+                                <a class="bg-white py-2 px-4 rounded-3xl
+                                    col-span-1 text-center" href="#"><span>Google</span></a>
+                                <a class="bg-white py-2 px-4 rounded-3xl
+                                    col-span-2 text-center" href="#"><span>Nano
+                                        Technology</span></a>
+                                <a class="bg-white py-2 px-4 rounded-3xl
+                                    col-span-2 text-center" href="#"><span>Mental
+                                        Health</span></a>
+                            </div>
+                        </div>
+                        <a class=" text-center" href="#"><strong>. . .</strong></a>
+                    </div>
+                </div>
+
+                <div class="lg:mb-10 sm:mb-4">
+                    <div class="flex justify-between items-center w-full
+                        bg-white lg:py-4 lg:px-6 sm:p-2 rounded lg:mb-4 sm:mb-2
+                        ">
+                        <div class="lg:w-3/5 sm:w-full">
+                            <p class="font-medium lg:text-lg lg:mb-4 sm:mb-2">Samsung
+                                Galaxy F22 launched in India: Price, features,
+                                other details</p>
+                            <p class="opacity-60 w-11/12 text-sm lg:mb-2
+                                sm:mb-1">Samsung Galaxy F22 has been launched in
+                                India. The new smartphone has been priced in the
+                                mid-range segment. The new smartphone is powered
+                                by a MediaTek chipset and features a high
+                                refresh rate AMOLED display.</p>
+                            <div class="flex justify-between lg:w-10/12
+                                sm:w-full">
+                                <div class="flex lg:justify-between lg:w-1/4
+                                    sm:gap-2">
+                                    <p class="opacity-40 text-xs">The Mint</p>
+                                    <p class="opacity-40 text-xs">15 mins ago</p>
+                                </div>
+                                <div class="flex lg:justify-between lg:w-1/3
+                                    sm:gap-2">
+                                    <a class="flex" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/share.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Share</p>
+                                    </a>
+                                    <a class="flex" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/pocket.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Read
+                                            Later</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-img">
+                            <img src="./images/Rectangle 16.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 lg:gap-4 sm:gap-2 w-full
+                        lg:mb-4 sm:mb-2">
+                        <div class=" bg-white lg:py-4 lg:px-6 sm:p-2 rounded">
+                            <div class="flex items-center justify-between w-full
+                                lg:gap-4 sm:gap-2 lg:mb-4 sm:mb-2">
+                                <div class="lg:w-2/3 sm:w-full">
+                                    <p class="lg:mb-4 sm:mb-2 text-lg
+                                        font-medium text-slate-700">Battlegrounds
+                                        Mobile India iOS release date</p>
+                                    <p class="opacity-60">The reason behind
+                                        their disappointment is that iPhone
+                                        users have been..</p>
+                                </div>
+                                <div class="hidden-img">
+                                    <img class="w-auto h-auto"
+                                        src="./images/pubg.png" alt="">
+                                </div>
+                            </div>
+                            <div class="flex justify-between w-full">
+                                <div class="info-hidden flex lg:w-1/4
+                                    items-center justify-between">
+                                    <p class="opacity-60 text-xs">Sport Biz</p>
+                                    <p class="opacity-60 text-xs">42 mins ago</p>
+                                </div>
+                                <div class="flex lg:w-2/5 sm:w-full sm:px-4
+                                    items-center justify-between">
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/share.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Share</p>
+                                    </a>
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/pocket.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Read
+                                            Later</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" bg-white lg:py-4 lg:px-6 sm:p-2 rounded">
+                            <div class="flex items-center justify-between w-full
+                                lg:gap-4 sm:gap-2 lg:mb-4 sm:mb-2">
+                                <div class="lg:w-2/3 sm:w-full">
+                                    <p class="lg:mb-4 sm:mb-2 text-lg
+                                        font-medium text-slate-700">Instagram
+                                        working on ‘Exclusive Stories’ for
+                                        subscribers</p>
+                                    <p class="opacity-60">Instagram could be
+                                        jumping on the paid subscription..</p>
+                                </div>
+                                <div class="hidden-img">
+                                    <img class="w-auto h-auto"
+                                        src="./images/instagram.png" alt="">
+                                </div>
+                            </div>
+                            <div class="flex justify-between w-full">
+                                <div class="info-hidden flex lg:w-1/4
+                                    items-center justify-between">
+                                    <p class="opacity-60 text-xs">The Mint</p>
+                                    <p class="opacity-60 text-xs">52 mins ago</p>
+                                </div>
+                                <div class="flex lg:w-2/5 sm:w-full sm:px-4
+                                    items-center justify-between">
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/share.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Share</p>
+                                    </a>
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/pocket.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Read
+                                            Later</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 lg:gap-4 sm:gap-2 w-full
+                        lg:mb-4 sm:mb-2">
+                        <div class=" bg-white lg:py-4 lg:px-6 sm:p-2 rounded">
+                            <div class="flex items-center justify-between w-full
+                                lg:gap-4 sm:gap-2 lg:mb-4 sm:mb-2">
+                                <div class="w-full">
+                                    <p class="lg:mb-4 sm:mb-2 text-lg
+                                        font-medium text-slate-700">Petrol,
+                                        diesel prices - July 6: Fuel prices
+                                        unchanged after touching record high</p>
+                                    <p class="opacity-60">The price of petrol
+                                        remained unchanged on July 6 after
+                                        reaching a new record high on the
+                                        previous day, according to a price
+                                        notification by state-owned..</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between w-full">
+                                <div class="info-hidden flex lg:w-1/4
+                                    items-center justify-between">
+                                    <p class="opacity-60 text-xs">Radar 52</p>
+                                    <p class="opacity-60 text-xs">1 hour ago</p>
+                                </div>
+                                <div class="flex lg:w-2/5 sm:w-full sm:px-4
+                                    items-center justify-between">
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/share.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Share</p>
+                                    </a>
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/pocket.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Read
+                                            Later</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" bg-white lg:py-4 lg:px-6 sm:p-2 rounded">
+                            <div class="flex items-center justify-between w-full
+                                lg:gap-4 sm:gap-2 lg:mb-4 sm:mb-2">
+                                <div class="lg:w-2/3 sm:w-full">
+                                    <p class="lg:mb-4 sm:mb-2 text-lg
+                                        font-medium text-slate-700">Android
+                                        smartphone users alert! Remove these 9
+                                        apps now</p>
+                                    <p class="opacity-60">Stealer trojans were
+                                        spread as harmless software..</p>
+                                </div>
+                                <div class="hidden-img">
+                                    <img class="w-auto h-auto"
+                                        src="./images/smartphone.png" alt="">
+                                </div>
+                            </div>
+                            <div class="flex justify-between w-full">
+                                <div class="info-hidden flex lg:w-1/4
+                                    items-center justify-between">
+                                    <p class="opacity-60 text-xs">Live Mint</p>
+                                    <p class="opacity-60 text-xs">2 hours ago</p>
+                                </div>
+                                <div class="flex lg:w-2/5 sm:w-full sm:px-4
+                                    items-center justify-between">
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/share.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Share</p>
+                                    </a>
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/pocket.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Read
+                                            Later</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 lg:gap-4 sm:gap-2 w-full
+                        lg:mb-4 sm:mb-2">
+                        <div class=" bg-white lg:py-4 lg:px-6 sm:p-2 rounded">
+                            <div class="flex items-center justify-between w-full
+                                lg:gap-4 sm:gap-2 lg:mb-4 sm:mb-2">
+                                <div class="lg:w-2/3 sm:w-full">
+                                    <p class="lg:mb-4 sm:mb-2 text-lg
+                                        font-medium text-slate-700">How to
+                                        install Windows 11 on almost any
+                                        unsupported PC</p>
+                                    <p class="opacity-60">Microsoft is allowing
+                                        some unsupported computers..</p>
+                                </div>
+                                <div class="hidden-img">
+                                    <img class="w-auto h-auto"
+                                        src="./images/windown11.png" alt="">
+                                </div>
+                            </div>
+                            <div class="flex justify-between w-full">
+                                <div class="info-hidden flex lg:w-1/4
+                                    items-center justify-between">
+                                    <p class="opacity-60 text-xs">Tech Mint</p>
+                                    <p class="opacity-60 text-xs">3 hours ago</p>
+                                </div>
+                                <div class="flex lg:w-2/5 sm:w-full sm:px-4
+                                    items-center justify-between">
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/share.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Share</p>
+                                    </a>
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/pocket.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Read
+                                            Later</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" bg-white lg:py-4 lg:px-6 sm:p-2 rounded">
+                            <div class="flex items-center justify-between w-full
+                                lg:gap-4 sm:gap-2 lg:mb-4 sm:mb-2">
+                                <div class="lg:w-2/3 sm:w-full">
+                                    <p class="lg:mb-4 sm:mb-2 text-lg
+                                        font-medium text-slate-700">This
+                                        charging feature from Android phones may
+                                        come to iPhone 13</p>
+                                    <p class="opacity-60">You will always find a
+                                        set of people who will say that..</p>
+                                </div>
+                                <div class="hidden-img">
+                                    <img class="w-auto h-auto"
+                                        src="./images/ip13.png" alt="">
+                                </div>
+                            </div>
+                            <div class="flex justify-between w-full">
+                                <div class="info-hidden flex lg:w-1/4
+                                    items-center justify-between">
+                                    <p class="opacity-60 text-xs">Live Mint</p>
+                                    <p class="opacity-60 text-xs">5 hours ago</p>
+                                </div>
+                                <div class="flex lg:w-2/5 sm:w-full sm:px-4
+                                    items-center justify-between">
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/share.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Share</p>
+                                    </a>
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/pocket.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Read
+                                            Later</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:mb-10 sm:mb-4">
+                    <div class="flex justify-between w-full lg:mb-4 sm:mb-2">
+                        <div class="flex lg:gap-6 sm:gap-2">
+                            <img src="./images/icon/feather.svg" alt=""> 
+                            <p class="font-bold text-base">Creators you should follow</p>
+                        </div>
+                        <div class="flex lg:gap-5 sm:gap-2">
+                            <div>
+                                <img src="./images/icon/arrow-right (1).svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./images/icon/arrow-right.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-5 gap-4">
+                        <div class="bg-white rounded lg:p-4 sm:p-1">
+                            <div class="mb-2">
+                                <img class="mx-auto " src="./images/taylor.png" alt="">
+                            </div>
+                            <div class="text-center mb-4">
+                                <p class="text-sm font-medium text-slate-800 mb-1">Shan Teylor</p>
+                                <p class="text-slate-800 opacity-60 text-xs  font-normal">Tech Mint</p>
+                            </div>
+                            <div class="w-full bg-blue-500 rounded py-4 sm:py-2">
+                                <p class="text-white text-center">Follow</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded lg:p-4 sm:p-1">
+                            <div class="mb-2">
+                                <img class="mx-auto " src="./images/angela.png" alt="">
+                            </div>
+                            <div class="text-center mb-4">
+                                <p class="text-sm font-medium text-slate-800 mb-1">Mary Angela</p>
+                                <p class="text-slate-800 opacity-60 text-xs  font-normal">Live Mint</p>
+                            </div>
+                            <div class="w-full bg-blue-500 rounded py-4 sm:py-2">
+                                <p class="text-white text-center">Follow</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded lg:p-4 sm:p-1">
+                            <div class="mb-2">
+                                <img class="mx-auto " src="./images/chi.png" alt="">
+                            </div>
+                            <div class="text-center mb-4">
+                                <p class="text-sm font-medium text-slate-800 mb-1">Kyon Cho Chi</p>
+                                <p class="text-slate-800 opacity-60 text-xs  font-normal">Bizz Daily</p>
+                            </div>
+                            <div class="w-full bg-blue-500 rounded py-4 sm:py-2">
+                                <p class="text-white text-center">Follow</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded lg:p-4 sm:p-1">
+                            <div class="mb-2">
+                                <img class="mx-auto " src="./images/livingstone.png" alt="">
+                            </div>
+                            <div class="text-center mb-4">
+                                <p class="text-sm font-medium text-slate-800 mb-1">Paul Livingstone</p>
+                                <p class="text-slate-800 opacity-60 text-xs  font-normal">Sport Biz</p>
+                            </div>
+                            <div class="w-full bg-blue-500 rounded py-4 sm:py-2">
+                                <p class="text-white text-center">Follow</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded lg:p-4 sm:p-1">
+                            <div class="mb-2">
+                                <img class="mx-auto " src="./images/jay.png" alt="">
+                            </div>
+                            <div class="text-center mb-4">
+                                <p class="text-sm font-medium text-slate-800 mb-1">Sara Jay</p>
+                                <p class="text-slate-800 opacity-60 text-xs  font-normal">Radar 52</p>
+                            </div>
+                            <div class="w-full bg-blue-500 rounded py-4 sm:py-2">
+                                <p class="text-white text-center">Follow</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="grid grid-cols-2 lg:gap-4 sm:gap-2 w-full
+                        lg:mb-4 sm:mb-2">
+                        <div class=" bg-white lg:py-4 lg:px-6 sm:p-2 rounded">
+                            <div class="flex items-center justify-between w-full
+                                lg:gap-4 sm:gap-2 lg:mb-4 sm:mb-2">
+                                <div class="lg:w-2/3 sm:w-full">
+                                    <p class="lg:mb-4 sm:mb-2 text-lg
+                                        font-medium text-slate-700">INDvENG Tests to be played in front of crowd
+                                    </p>
+                                    <p class="opacity-60">The 5-Test series between India & England is set to be played in front of packed..</p>
+                                </div>
+                                <div class="hidden-img">
+                                    <img class="w-auto h-auto"
+                                        src="./images/crond.png" alt="">
+                                </div>
+                            </div>
+                            <div class="flex justify-between w-full">
+                                <div class="info-hidden flex lg:w-1/4
+                                    items-center justify-between">
+                                    <p class="opacity-60 text-xs">Sport Biz</p>
+                                    <p class="opacity-60 text-xs">7 hours ago</p>
+                                </div>
+                                <div class="flex lg:w-2/5 sm:w-full sm:px-4
+                                    items-center justify-between">
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/share.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Share</p>
+                                    </a>
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/pocket.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Read
+                                            Later</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" bg-white lg:py-4 lg:px-6 sm:p-2 rounded">
+                            <div class="flex items-center justify-between w-full
+                                lg:gap-4 sm:gap-2 lg:mb-4 sm:mb-2">
+                                <div class="lg:w-2/3 sm:w-full">
+                                    <p class="lg:mb-4 sm:mb-2 text-lg
+                                        font-medium text-slate-700">The 10 Coolest Wearable Tech Gadgets Of 2021 (So Far)</p>
+                                    <p class="opacity-60">Driven by demand for connected earbuds and a..</p>
+                                </div>
+                                <div class="hidden-img">
+                                    <img class="w-auto h-auto"
+                                        src="./images/watch.png" alt="">
+                                </div>
+                            </div>
+                            <div class="flex justify-between w-full">
+                                <div class="info-hidden flex lg:w-1/4
+                                    items-center justify-between">
+                                    <p class="opacity-60 text-xs">The Mint</p>
+                                    <p class="opacity-60 text-xs">7 hours ago</p>
+                                </div>
+                                <div class="flex lg:w-2/5 sm:w-full sm:px-4
+                                    items-center justify-between">
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/share.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Share</p>
+                                    </a>
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/pocket.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Read
+                                            Later</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 lg:gap-4 sm:gap-2 w-full
+                        lg:mb-4 sm:mb-2">
+                        <div class=" bg-white lg:py-4 lg:px-6 sm:p-2 rounded">
+                            <div class="flex items-center justify-between w-full
+                                lg:gap-4 sm:gap-2 lg:mb-4 sm:mb-2">
+                                <div class="w-full">
+                                    <p class="lg:mb-4 sm:mb-2 text-lg
+                                        font-medium text-slate-700">Biden's cold response to Afghanistan's collapse to have far consequences
+                                    </p>
+                                    <p class="opacity-60">When US President Joe Biden chose in April to withdraw all American forces from Afghanistan by September, we were among those who judged..</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between w-full">
+                                <div class="info-hidden flex lg:w-1/4
+                                    items-center justify-between">
+                                    <p class="opacity-60 text-xs">Radar 52</p>
+                                    <p class="opacity-60 text-xs">8 hours ago</p>
+                                </div>
+                                <div class="flex lg:w-2/5 sm:w-full sm:px-4
+                                    items-center justify-between">
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/share.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Share</p>
+                                    </a>
+                                    <a class="flex lg:w-1/2" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/pocket.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Read
+                                            Later</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" bg-white lg:py-4 lg:px-6 sm:p-2 rounded">
+                            <div class="flex items-center justify-between w-full
+                                lg:gap-4 sm:gap-2 lg:mb-4 sm:mb-2">
+                                <div class="lg:w-2/3 sm:w-full">
+                                    <p class="lg:mb-4 sm:mb-2 text-lg
+                                        font-medium text-slate-700">Hardik Pandya 'is bowling and it is a very good sign' - Suryakumar</p>
+                                    <p class="opacity-60">I think that the team management and Hardik..</p>
+                                </div>
+                                <div class="hidden-img">
+                                    <img class="w-auto h-auto"
+                                        src="./images/pandya.png" alt="">
+                                </div>
+                            </div>
+                            <div class="flex justify-between w-full">
+                                <div class="info-hidden flex lg:w-1/4
+                                    items-center justify-between">
+                                    <p class="opacity-60 text-xs">Cric Mint</p>
+                                    <p class="opacity-60 text-xs">9 hours ago</p>
+                                </div>
+                                <div class="inline-flex lg:w-2/5 sm:w-full sm:px-4
+                                    items-center justify-between">
+                                    <a class="flex" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/share.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Share</p>
+                                    </a>
+                                    <a class="flex" href="#">
+                                        <img class="lg:mr-2"
+                                            src="./images/icon/pocket.svg"
+                                            alt="">
+                                        <p class="text-sky-600 text-xs">Read
+                                            Later</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex lg:mt-16 sm:mt-4">
+                        <div class="mx-auto border rounded py-2 px-4"><p class="text-slate-800">Show More</p></div>
+                    </div>
+                </div>
+                <div class="flex justify-between mt-14 py-5 border-t">
+                    <p class="opacity-60 font-normal text-xs">© Aster News, 2022</p>
+                    <div class="flex gap-6">
+                        <p class="opacity-60 font-normal text-xs " >Privacy Policy</p>
+                        <p class="opacity-60 font-normal text-xs">Terms of Service</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-span-1 lg:pr-1 w-full">
+                <div class="text-right">
+                    <div class="inline-flex items-center lg:mb-20 lg:py-5
+                        sm:mb-5">
+                        <img src="./images/icon/user.svg" alt="">
+                        <p class="lg:ml-4 lg:mr-6">My Profile</p>
+                        <img src="./images/icon/Group 9.svg" alt="">
+                    </div>
+                </div>
+
+                <div class=" bg-white lg:p-4 shadow-2xl sm:p-1 lg:mb-5 sm:mb-2
+                    rounded">
+                    <div class="inline-flex items-center lg:py-2 lg:mb-4
+                        border-b">
+                        <p class="lg:mr-20 sm:w-auto">Coimbatore, Tamil Nadu</p>
+                        <div class="float-right">
+                            <img src="./images/icon/crosshair.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="inline-flex items-center justify-between
+                        w-full">
+                        <div>
+                            <p class="lg:text-base lg:mb-2">Sunny</p>
+                            <div class="font-bold lg:text-2xl lg:mb-4 ">31&deg;c</div>
+                            <div class="flex lg:gap-5 sm:gap-1">
+                                <p>Celsius</p>
+                                <p class="opacity-30">Fahrenheit</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <img class="w-auto object-cover"
+                                src="./images/icon/sun.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" lg:p-4 bg-white shadow-2xl sm:p-1 rounded lg:mb-5
+                    sm:mb-2">
+                    <div class="flex items-center lg:mb-5 sm:mb-2">
+                        <img class="lg:mr-4" src="./images/icon/feather.svg"
+                            alt="">
+                        <p class="lg:text-lg sm:text-sm">Become a Story Writer</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="w-3/5 opacity-60 text-left sm:text-sm">Contribute
+                            stories and start earning.</p>
+                        <div class="border lg:py-2 lg:px-3 rounded text-center">
+                            <a href=""><span class="text-blue-400 sm:text-sm ">Know
+                                    More</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:p-4 bg-white shadow-2xl sm:p-1 rounded lg:mb-5
+                    sm:mb-2">
+                    <div class="flex items-center justify-between lg:pb-2
+                        border-b lg:mb-4">
+                        <div class="flex items-center lg:w-3/5">
+                            <img class="lg:mr-5"
+                                src="./images/icon/file-text.svg" alt="">
+                            <p class="text-center">Quick Bytes</p>
+                        </div>
+                        <div class="flex justify-between items-center w-1/3">
+                            <div class="bg-blue-100 rounded-full lg:p-4 sm:p-1
+                                ">
+                                <img src="./images/icon/arrow_1.svg" alt="">
+                            </div>
+                            <div class="bg-blue-600 rounded-full lg:p-4 sm:p-1">
+                                <img src="./images/icon/arrow_2.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opacity-60 mb-5">
+                        <p>The price of petrol remained unchanged on July 6
+                            after reaching a new record high on the previous
+                            day, according to a price notification by
+                            state-owned fuel retailers. The diesel price
+                            remained stable for the second consecutive day.
+                            <br>
+                            <br>
+                            The increase on July 5, 35th in two months, took the
+                            petrol price in Delhi closer to Rs 100 per
+                            litre-mark. The petrol price in the national capital
+                            soared to Rs 99.9 a litre and diesel was priced at
+                            Rs 89.4 per litre, according to Bharat Petroleum's
+                            price listing.</p>
+                    </div>
+                    <div class="text-center w-full mb-2">
+                        <img class="w-auto mx-auto object-cover"
+                            src="./images/icon/Group 37.svg" alt="">
+                    </div>
+                </div>
+
+                <div class=" lg:p-4 bg-white shadow-2xl sm:p-1 rounded lg:mb-5
+                    sm:mb-2">
+                    <div class="flex items-center lg:mb-5 sm:mb-2">
+                        <p class="lg:text-lg sm:text-sm">Subscribe to our
+                            newsletter</p>
+                    </div>
+                    <div class="flex items-center justify-between lg:mb-5
+                        sm:mb-2">
+                        <input class="rounded bg-slate-200 w-full lg:h-10"
+                            type="email" placeholder=" Enter Email">
+                    </div>
+                    <div class="bg-blue-400 rounded flext items-center
+                        justify-between lg:py-5">
+                        <a class=" w-full" href="#">
+                            <p class="text-center text-white">Subscribe</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
